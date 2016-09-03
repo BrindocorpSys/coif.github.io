@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="images/logo.png">
+<title>COIF - ADMIN Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+   <a href="#" id="logo"><img src="images/logo.png"> COIF</a>
+    
+   <nav><!--NAV-->
+      <a class="button demo" href="#">LOGOUT</a>
+   </nav><!--NAV ENDS-->
+
+</header>
+
+
+<aside>
+   <section class="sidebar">
+   
+      <div class="user_panel"><!--FIRST-->
+         <div id="user_img"><img src="images/friend.png"></div>
+         <div id="user_img_info"><p>ADMIN NAME</p></div>
+      </div><!--FIRST ENDS-->
+      
+      <form>
+         <div class="input">
+            <input type="text" placeholder="Search...">
+            <span id="btn"><button><i class="fa fa-search"></i></button></span>
+         </div>
+      </form>
+      
+      <ul class="sidebar_menu">
+         <li class="active"><a href="admin.html" style="color:#FFF;"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+         <li><a href="all_service_providers.html"><i class="fa fa-building-o" aria-hidden="true"></i> All Service Providers <span>4</span></a></li>
+         <li><a href="all_users.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> All Users <span>4</span></a></li>
+         <li><a href="update_forum.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Update Forum</a></li>
+         <li><a href="reports.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Reports</a></li>
+      </ul>
+      
+   </section>
+</aside>
+
+
+<div id="content"><!--CONTENT-->
+   <section id="content_header">
+      <h1>PROFILE</h1>
+   </section>
+
+<section id="content_inner"><!--CONTENT INNER-->
+   <div id="profile">
+      <div id="left_side">
+         <img src="images/friend.png">
+         <input type="file" name="img">
+      </div>
+      
+      <div id="right_side">
+         <h1>Admin Name</h1>
+         <p>me@yahoo.com</p>
+         <p>09012345678</p>
+      </div>
+      
+      <div id="last">
+         <a class="button demo" href="#edit">Edit Info</a>
+      </div>
+      
+   </div>
+
+<!--EDIT-->
+<div id="edit" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			
+             <form class="login-block">
+            <h1>EDIT INFO</h1>
+            <input type="text" placeholder="Fullname" id="salon" name="name"/>
+            <input type="text" placeholder="Email" id="email" name="email"/>
+            <input type="text" placeholder="Phone" id="phone" name="phone"/>
+            <span style="color:#F00; font-size:12px;"><a href="#change">Change Password?</a></span><br><br>
+            <input type="submit" value="DONE"/>
+            </form>
+    
+		</div>
+	</div>
+</div>
+<!--EDIT ENDS-->
+
+
+<!--CHANGE-->
+<div id="change" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			
+             <form class="login-block">
+            <h1>CHANGE PASSWORD</h1>
+            <input type="text" placeholder="Old Password" id="password" name="name"/>
+            <input type="text" placeholder="New Password" id="password" name="name"/>
+            <input type="text" placeholder="Confirm Password" id="password" name="name"/>
+            <input type="submit" value="DONE"/>
+            </form>
+    
+		</div>
+	</div>
+</div>
+<!--CHANGE ENDS-->
+
+
+
+
+
+</section><!--CONTENT INNER ENDS-->
+</div><!--CONTENT ENDS-->
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/logo.png">
+<title>COIF - User Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link rel="stylesheet" type="text/css" href="css/dashboard_responsive.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+   <a href="#" id="logo"><img src="images/logo.png"> COIF</a>
+    
+   <nav><!--NAV-->
+      <a class="button demo" href="#">LOGOUT</a>
+   </nav><!--NAV ENDS-->
+
+</header>
+
+
+<header class="mobile_header">
+   <span style="font-size:30px;cursor:pointer; color:#FFF;" onclick="openNav()">&#9776; <img src="images/logo.png"></span>
+   <a class="button demo" href="#">LOGOUT</a>
+</header>
+
+
+<aside>
+   <section class="sidebar">
+   
+      <div class="user_panel"><!--FIRST-->
+         <div id="user_img"><img src="images/friend.png"></div>
+         <div id="user_img_info"><p>JOBA SAMUEL</p></div>
+      </div><!--FIRST ENDS-->
+      
+      <form>
+         <div class="input">
+            <input type="text" placeholder="Search...">
+            <span id="btn"><button><i class="fa fa-search"></i></button></span>
+         </div>
+      </form>
+      
+      <ul class="sidebar_menu">
+         <li class="active"><a href="service_dashboard.html" style="color:#FFF;"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+         <li><a href="request.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Request <span>2</span></a></li>
+         <li><a href="service_messages.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Feedback <span>4</span></a></li>
+         <li><a href="payment.html"><i class="fa fa-credit-card" aria-hidden="true"></i> Payment</a></li>
+         <li><a href="forum.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Forum</a></li>
+         <li><a href="service_help.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+      </ul>
+      
+   </section>
+</aside>
+
+
+
+<!--MOBILE NAV-->
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="user_panel"><!--FIRST-->
+         <div id="user_img"><img src="images/friend.png"></div>
+         <div id="user_img_info"><p>JOBA SAMUEL</p></div>
+      </div><!--FIRST ENDS-->
+      
+      <form class="sidebar_form">
+         <div class="input">
+            <input type="text" placeholder="Search...">
+            <span id="btn"><button><i class="fa fa-search"></i></button></span>
+         </div>
+      </form>
+      
+      <ul class="sidebar_menu">
+         <li class="active"><a href="service_dashboard.html" style="color:#FFF;"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+         <li><a href="request.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Request <span>2</span></a></li>
+         <li><a href="service_messages.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Feedback <span>4</span></a></li>
+         <li><a href="payment.html"><i class="fa fa-credit-card" aria-hidden="true"></i> Payment</a></li>
+         <li><a href="forum.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Forum</a></li>
+         <li><a href="service_help.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+      </ul>
+</div>
+
+<!--MOBILE NAV ENDS-->
+
+
+
+<div id="content"><!--CONTENT-->
+   <section id="content_header">
+      <h1>PROFILE</h1>
+   </section>
+
+<section id="content_inner"><!--CONTENT INNER-->
+   <div id="profile">
+      <div id="left_side">
+         <img src="images/friend.png">
+         <input type="file" name="img">
+      </div>
+      
+      <div id="right_side">
+         <h1>Service Provider</h1>
+         <p>me@yahoo.com</p>
+         <p>09012345678</p>
+         <p><a href="#">www.me.com</a></p>
+         <p>No 12 Me Street, Egbeda, Lagos</p>
+         <p>We specialize in hair fixing, nail fixing........</p>
+      </div>
+      
+      <div id="last">
+         <a class="button demo" href="#edit">Edit Info</a>
+      </div>
+   </div>
+
+
+
+<!--EDIT-->
+<div id="edit" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			
+             <form class="login-block">
+            <h1>EDIT INFO</h1>
+            <input type="text" placeholder="Salon Name" id="salon" name="name"/>
+            <input type="text" placeholder="Email" id="email" name="email"/>
+            <input type="text" placeholder="Phone" id="phone" name="phone"/>
+            <input type="text" placeholder="Location" id="location" name="location"/>
+            <textarea placeholder="Specialities"></textarea>
+            <input type="submit" value="DONE"/>
+            </form>
+    
+		</div>
+	</div>
+</div>
+<!--EDIT ENDS-->
+
+
+
+</section><!--CONTENT INNER ENDS-->
+</div><!--CONTENT ENDS-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "230px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

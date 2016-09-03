@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="images/logo.png">
+<title>COIF - ADMIN Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+   <a href="#" id="logo"><img src="images/logo.png"> COIF</a>
+    
+   <nav><!--NAV-->
+      <a class="button demo" href="#">LOGOUT</a>
+   </nav><!--NAV ENDS-->
+
+</header>
+
+
+<aside>
+   <section class="sidebar">
+   
+      <div class="user_panel"><!--FIRST-->
+         <div id="user_img"><img src="images/friend.png"></div>
+         <div id="user_img_info"><p>ADMIN NAME</p></div>
+      </div><!--FIRST ENDS-->
+      
+      <form>
+         <div class="input">
+            <input type="text" placeholder="Search...">
+            <span id="btn"><button><i class="fa fa-search"></i></button></span>
+         </div>
+      </form>
+      
+      <ul class="sidebar_menu">
+         <li><a href="admin.html"><i class="fa fa-user" aria-hidden="true"></i> Profile</a></li>
+         <li><a href="all_service_providers.html"><i class="fa fa-building-o" aria-hidden="true"></i> All Service Providers <span>4</span></a></li>
+         <li><a href="all_users.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> All Users <span>4</span></a></li>
+         <li><a href="update_forum.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Update Forum</a></li>
+         <li class="active"><a href="reports.html" style="color:#FFF;"><i class="fa fa-question-circle" aria-hidden="true"></i> Reports</a></li>
+      </ul>
+      
+   </section>
+</aside>
+
+
+<div id="content"><!--CONTENT-->
+   <section id="content_header">
+      <h1>CUSTOMER REPORTS</h1>
+   </section>
+
+<section id="content_inner"><!--CONTENT INNER-->
+   <div id="profile">
+      <div id="left_side">
+         <img src="images/hair.png">
+      </div>
+      
+      <div id="right_side">
+         <h1><span>From:</span> Olawale</h1>
+         <p>You guys ROCK<br>Peace Y'all.</p>
+      </div>
+      
+      <div id="last">
+         <a class="button demo" href="#reply">Reply Message</a>
+      </div>
+   </div>
+
+
+
+<!--EDIT-->
+<div id="reply" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			
+             <form class="login-block">
+            <h1>REPLY</h1>
+            <input type="text" placeholder="Customer Name" id="salon" name="name"/>
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="DONE"/>
+            </form>
+    
+		</div>
+	</div>
+</div>
+<!--EDIT ENDS-->
+
+
+
+</section><!--CONTENT INNER ENDS-->
+</div><!--CONTENT ENDS-->
+</body>
+</html>
